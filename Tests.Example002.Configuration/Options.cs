@@ -8,8 +8,7 @@ public class Options
     public string Version { get; set; } = null!;
     public string[] Tags { get; set; } = null!;
     public string[] Files { get; set; } = null!;
-
     
-    private readonly JsonSerializerOptions _serializerOptions = new() { WriteIndented = true };
+    private static readonly JsonSerializerOptions _serializerOptions = new() { WriteIndented = true };
     public override string ToString() => JsonSerializer.Serialize(this, _serializerOptions);
 }
