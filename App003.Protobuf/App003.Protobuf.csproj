@@ -10,13 +10,10 @@
     <ItemGroup>
       <PackageReference Include="Google.Protobuf" Version="3.22.0" />
     </ItemGroup>
-
-    <ItemGroup>
-      <Folder Include="Proto\Generated" />
-    </ItemGroup>
-
-    <Target Name="PreBuild" BeforeTargets="PreBuildEvent">
-      <Exec Command="protoc --proto_path=$(SolutionDir) --csharp_out=$(ProjectDir)\Proto\Generated\ $(ProjectDir)\Proto\*.proto" />
+    
+    <Target Name="ProtoCompile" BeforeTargets="PreBuildEvent" Condition="!Exists('$(ProjectDir)Proto\Generated')">
+      <Exec Command="mkdir Proto\Generated" />
+      <Exec Command="protoc --proto_path=$(SolutionDir) --csharp_out=$(ProjectDir)Proto\Generated $(ProjectDir)Proto\*.proto" />
     </Target>
 
 </Project>
