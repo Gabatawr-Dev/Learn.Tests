@@ -1,4 +1,5 @@
 ﻿syntax = "proto3";
+option csharp_namespace = "App003.Protobuf.Proto.Generated";
 
 import "App003.Protobuf/Proto/TestType.proto";
 

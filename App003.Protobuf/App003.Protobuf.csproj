@@ -16,7 +16,7 @@
     </ItemGroup>
 
     <Target Name="PreBuild" BeforeTargets="PreBuildEvent">
-      <Exec Command="PowerShell -ExecutionPolicy Unrestricted -file $(ProjectDir)Proto\.ps1 $(SolutionDir) $(ProjectDir)" />
+      <Exec Command="protoc --proto_path=$(SolutionDir) --csharp_out=$(ProjectDir)\Proto\Generated\ $(ProjectDir)\Proto\*.proto" />
     </Target>
 
 </Project>
