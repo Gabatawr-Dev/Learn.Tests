@@ -1,0 +1,14 @@
+﻿syntax = "proto3";
+
+import "App003.Protobuf/Proto/TestType.proto";
+
+message Data {
+  int32 some_int = 1;
+  string some_string = 2;
+  repeated DataType data_type = 3;
+}
+
+enum DataType {
+  String = 0;
+  Int = 1;
+}

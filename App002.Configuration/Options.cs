@@ -1,6 +1,6 @@
 ﻿using System.Text.Json;
 
-namespace Tests.Example002.Configuration;
+namespace App002.Configuration;
 
 public class Options
 {

@@ -1,6 +1,6 @@
 ﻿using Microsoft.Extensions.Configuration;
 
-namespace Tests.Example002.Configuration;
+namespace App002.Configuration;
 
 internal class Program
 {

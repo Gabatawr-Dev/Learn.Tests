@@ -1,4 +1,4 @@
-﻿namespace Tests.Example001;
+﻿namespace App001;
 
 internal class Program
 {
