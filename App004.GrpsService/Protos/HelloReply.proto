@@ -1,0 +1,6 @@
+syntax = "proto3";
+option csharp_namespace = "App004.GrpsService.Protos.Messages";
+
+message HelloReply {
+  string message = 1;
+}

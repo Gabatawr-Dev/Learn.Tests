@@ -1,0 +1,6 @@
+﻿syntax = "proto3";
+option csharp_namespace = "App003.Protobuf.Protos.Messages";
+
+message Test {
+  string name = 1;
+}

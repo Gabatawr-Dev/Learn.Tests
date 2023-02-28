@@ -1,0 +1,7 @@
+﻿syntax = "proto3";
+option csharp_namespace = "App003.Protobuf.Protos.Messages.Enums";
+
+enum DataTypes {
+  String = 0;
+  Int = 1;
+}

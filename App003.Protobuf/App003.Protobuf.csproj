@@ -12,7 +12,7 @@
     </ItemGroup>
 
     <Target Name="ProtoCompile" BeforeTargets="PreBuildEvent">
-      <Exec Command="protoc --proto_path=$(SolutionDir) --csharp_out=$(ProjectDir) --csharp_opt=file_extension=.g.cs,base_namespace=$(ProjectName),internal_access $(ProjectDir)Proto\*.proto" />
+      <Exec Command="protoc --proto_path=$(SolutionDir) --csharp_out=$(ProjectDir) --csharp_opt=file_extension=.g.cs,base_namespace=$(ProjectName),internal_access $(ProjectDir)Protos\*.proto" />
     </Target>
 
 </Project>

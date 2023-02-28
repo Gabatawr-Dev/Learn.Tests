@@ -3,8 +3,10 @@
 ##
 ## Get latest from https://github.com/github/gitignore/blob/main/VisualStudio.gitignore
 
-# Protobuf
-/*/Proto/Generated/
+# Protobuf generated files
+*.g.cs
+# Grps Kreya
+**/.kreya/**/
 
 # User-specific files
 *.rsuser

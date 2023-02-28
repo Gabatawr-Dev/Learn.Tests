@@ -1,0 +1,12 @@
+﻿syntax = "proto3";
+option csharp_namespace = "App003.Protobuf.Protos.Messages";
+
+import "App003.Protobuf/Protos/Test.proto";
+import "App003.Protobuf/Protos/DataTypes.proto";
+
+message Data {
+  int32 some_int = 1;
+  string some_string = 2;
+  repeated DataTypes data_type = 3;
+  Test some_test = 4;
+}

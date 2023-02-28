@@ -1,0 +1,12 @@
+{
+  "settings": [
+    {
+      "options": {
+        "grpc": {
+          "endpoint": "http://localhost:5253",
+          "disableServerCertificateValidation": true
+        }
+      }
+    }
+  ]
+}

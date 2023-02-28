@@ -1,0 +1,11 @@
+syntax = "proto3";
+option csharp_namespace = "App004.GrpsService.Protos.Messages";
+
+import "google/protobuf/empty.proto";
+import "App004.GrpsService/Protos/HelloReply.proto";
+import "App004.GrpsService/Protos/HelloRequest.proto";
+
+service Greeter {
+  rpc Say (google.protobuf.Empty) returns (HelloReply);
+  rpc SayHello (HelloRequest) returns (HelloReply);
+}

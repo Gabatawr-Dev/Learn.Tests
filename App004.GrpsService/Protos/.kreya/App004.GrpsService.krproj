@@ -1,0 +1,22 @@
+{
+  "id": "0ace0773-8f99-44bf-8cd8-ca5f39e9de8d",
+  "importStreams": [
+    {
+      "id": "562750c7-3c8e-42c4-a4de-9b3ca4772acd",
+      "name": "Protos",
+      "importerName": "ProtoFile",
+      "createMissingOperations": true,
+      "options": {
+        "files": [
+          ".."
+        ],
+        "importPaths": [
+          "../../..",
+          "../../../../../../../C:/Users/Gabat/AppData/Local/JetBrains/Rider2022.3/protoeditor"
+        ]
+      }
+    }
+  ],
+  "authConfigs": [],
+  "certificates": []
+}
